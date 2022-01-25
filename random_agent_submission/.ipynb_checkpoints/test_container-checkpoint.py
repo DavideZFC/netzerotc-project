@@ -14,6 +14,7 @@ logger.setLevel(logging.DEBUG)
 
 
 client = docker.from_env()
+print(client)
 
 # set up a submission (agent) container
 # assumes an image "submission:v0.1.0" was created using `make` in reference/environment
